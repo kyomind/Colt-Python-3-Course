@@ -16,8 +16,9 @@ for i in lst:
     for k in i:
         if '/' in k:
             one.extend(k.split('/')) # 更直觀的做法
-#            one.append(k[:k.index('/')])
-#            one.append(k[k.index('/')+1:])
+            # 能簡單就不要複雜
+#           one.append(k[:k.index('/')])
+#           one.append(k[k.index('/')+1:])
         else:
             one.append(k)
 
